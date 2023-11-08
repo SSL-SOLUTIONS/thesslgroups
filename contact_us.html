@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="particles.js is a lightweight JavaScript library for creating particles.">
+    <meta name="author" content="Vincent Garreau" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen" href="css/form.css">
+    <link rel="stylesheet" media="screen" href="css/stylee.css">
+    <link rel="shortcut icon" href="images/SSL_logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,600&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"
+        integrity="sha512-AA1Bzp5Q0K1KanKKmvN/4d3IRKVlv9PYgwFPvm32nPO6QS8yH1HO7LbgB1pgiOxPtfeg5zEn2ba64MUcqJx6CA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>SSL Group</title>
+    <style>
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background: #0b0916;
+            background-image: url('/images/SSL_logo.png');
+            background-size: 70% 80%;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+        }
+
+
+        .footer .wave {
+            position: absolute;
+            top: -100px;
+            left: 0;
+            width: 100%;
+            height: 100px;
+            background: #16122c url(/images/wave.png);
+            background-size: 1000px 110px;
+        }
+    </style>
+</head>
+
+<body>
+    <div style="background-color: #16122c;">
+        <div id="particles-js">
+        </div>
+        <section class="section">
+            <div class="form">
+                <div class="contact-info" data-aos="fade-right">
+                    <div>
+                        <h2 class="h2-form">Contact Information</h2>
+                        <ul class="info">
+                            <li>
+                                <span class="span-form">
+                                    <img class="img-form" src="images/location.png" alt="">
+                                </span>
+                                <span class="span-form">
+                                    <a href="https://www.google.com/maps?q=303, 3rd Floor, Landmark Plaza Jail Road, Lahore"
+                                        target="_blank" style="text-decoration: none; color:#fff">
+                                        303, 3rd Floor, Landmark Plaza Jail Road, Lahore
+                                    </a>
+
+                                </span>
+                            </li>
+                            <li>
+                                <span class="span-form">
+                                    <img class="img-form" src="images/mail.png" alt="">
+                                </span>
+                                <span class="span-form">
+                                    <a href="mailto:info@thesslgroup.com" style="color: #fff;">
+                                        info@thesslgroup.com
+                                    </a>
+                                </span>
+                            </li>
+                            <li>
+                                <span class="span-form">
+                                    <img class="img-form" src="images/call.png" alt="">
+                                </span>
+                                <span class="span-form">
+                                    <a href="https://api.whatsapp.com/send?phone=923124700804" target="_blank"
+                                        style="text-decoration:none; color:#fff;">
+                                        +92 312 4700 804
+                                    </a>
+                                </span>
+                            </li>
+                        </ul>
+                        <ul class="sci">
+                            <li>
+                                <a href="">
+                                    <img class="img-form" src="images/1.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="img-form" src="images/2.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="img-form" src="images/3.png" alt="">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    <img class="img-form" src="images/5.png" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contact-form" data-aos="zoom-in">
+                    <h2 class="h2-form">Send a Message</h2>
+                    <div class="form-box" data-aos="flip-down">
+                        <div class="input-box w50">
+                            <input type="text" required>
+                            <span class="span-form">
+                                First Name
+                            </span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="text" required>
+                            <span class="span-form">
+                                Last Name
+                            </span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="email" required>
+                            <span class="span-form">
+                                Email
+                            </span>
+                        </div>
+                        <div class="input-box w50">
+                            <input type="number" required>
+                            <span class="span-form">
+                                Phone
+                            </span>
+                        </div>
+                        <div class="input-box w100">
+                            <textarea required></textarea>
+                            <span class="span-form">
+                                Message
+                            </span>
+                        </div>
+                        <div class="input-box w100">
+                            <input type="submit" value="Send">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer Section  -->
+    <div class="footer-body">
+        <footer class="footer">
+            <div class="waves">
+                <div class="wave" id="wave1"></div>
+                <div class="wave" id="wave2"></div>
+                <div class="wave" id="wave3"></div>
+                <div class="wave" id="wave4"></div>
+                <div class="wave" id="wave5"></div>
+            </div>
+            <ul class="social-icon">
+                <li class="li-footer">
+                    <a class="a-footer" href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a>
+                </li>
+                <li class="li-footer">
+                    <a class="a-footer" href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                </li>
+                <li class="li-footer">
+                    <a class="a-footer" href="#">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                </li>
+                <li class="li-footer">
+                    <a class="a-footer" href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a>
+                </li>
+            </ul>
+            <ul class="menu">
+                <li class="li-footer"><a class="a-footer" href="index.html">Home</a></li>
+                <li class="li-footer"><a class="a-footer" href="about.html">About Us</a></li>
+                <li class="li-footer"><a class="a-footer" href="contact_us.html">Contact Us</a></li>
+            </ul>
+            <p class="p-footer">@2023 SSL GROUP | All Rights Reserves</p>
+        </footer>
+    </div>
+    <!-- End Footer Section  -->
+
+
+    <script src="js/particles.js"></script>
+    <script src="js/app.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+        });
+    </script>
+</body>
+
+</html>
